@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hema/Desktop/Hiwi/diagonalsw-0.9.0/src/c/cmdline_diagonalsw.c
+config.h
+/home/hema/Desktop/Hiwi/diagonalsw-0.9.0/src/c/config.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+getopt.h
+-
+cmdline_diagonalsw.h
+/home/hema/Desktop/Hiwi/diagonalsw-0.9.0/src/c/cmdline_diagonalsw.h
+
+/home/hema/Desktop/Hiwi/diagonalsw-0.9.0/src/c/cmdline_diagonalsw.h
+config.h
+/home/hema/Desktop/Hiwi/diagonalsw-0.9.0/src/c/config.h
+stdio.h
+-
+
+/home/hema/Desktop/Hiwi/diagonalsw-0.9.0/src/c/config.h
+

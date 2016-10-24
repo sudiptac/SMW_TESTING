@@ -1,0 +1,12 @@
+Jul 25, 2016 10:29:20 PM jaligner.ui.AlignCommandLine main
+INFO: JAligner - Build: 200505031520 - By: Ahmed Moustafa (ahmed@users.sf.net)
+Jul 25, 2016 10:29:20 PM jaligner.ui.AlignCommandLine main
+SEVERE: Invalid number of arguments: 2
+Jul 25, 2016 10:29:20 PM jaligner.ui.AlignCommandLine printUsage
+INFO: 
+Usage:
+------
+[1] java -jar jaligner.jar <s1> <s2> <matrix> <open> <extend>
+[2] java -jar jaligner.jar
+
+
