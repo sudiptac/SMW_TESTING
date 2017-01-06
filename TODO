@@ -1,0 +1,7 @@
+Gap opening and gap extension penalties mismatch (to be fixed):
+
+- SSW_Library : gap_opening = 3, gap_extension = 1
+- Jaligner: gap_opening = 10, gap_extension = 0.5
+- diagonalsw: gap_opening = 10, gap_extension = 2
+
+Find golden implementation (python library, swalign)
