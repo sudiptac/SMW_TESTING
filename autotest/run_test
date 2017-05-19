@@ -8,17 +8,20 @@ fi
 for i in `seq 1 50`;
 do
 	j=`expr $i + 1`
+	# run ssw_library (be careful with all the parameters)
 	ssw_test -a matrices/blosum62.mat -o 2 -e 2 tests/data$i.fasta tests/data$j.fasta >& all
 	grep -inr "optimal_alignment_score" all >& score
 	cut -f1 -d$'\t' score >& optimal
 	cut -f2 -d" " optimal >& ssw_quantified
 	#print the results by SSW Library
 	cat ssw_quantified
+	# run jaligner (be careful with all the parameters)
 	java -Xmx4096M -jar ../opt/jaligner/jaligner.jar tests/data$i.fasta tests/data$j.fasta BLOSUM62 2.0 2.0 >& all
 	grep -inr "Score" all >& optimal
 	cut -f2 -d" " optimal >& jaligner_quantified
 	#Print the results by Jaligner
 	cat jaligner_quantified
+	# run diagonalsw (be careful with all the parameters)
 	diagonalsw -i -2 -e -2 -q tests/data$j.fasta -d tests/data$i.fasta -s matrices/blosum62.mat --max-query-sequence-length=1000000 >& diagonalsw_quantified
 	#Print the results by diagonalsw
 	cat diagonalsw_quantified
